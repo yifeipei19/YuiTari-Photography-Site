@@ -1,0 +1,26 @@
+/* Chinese typography for the work archive and photograph details. */
+html[lang="zh-CN"]{
+ --zh-display:"STSong","华文宋体","Songti SC","Noto Serif CJK SC",serif;
+ --zh-text:"DengXian","等线","Microsoft YaHei",sans-serif;
+}
+html[lang="zh-CN"] body{font-family:var(--zh-text);font-weight:400}
+html[lang="zh-CN"] h1,html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{font-family:var(--zh-display);font-weight:400;font-style:normal;font-synthesis:none;letter-spacing:.035em;line-height:1.15}
+html[lang="zh-CN"] h1 em,html[lang="zh-CN"] h2 em,html[lang="zh-CN"] h3 em{font-style:normal}
+html[lang="zh-CN"] .lang-switch button{font-family:var(--zh-text);font-size:11px}
+html[lang="zh-CN"] .archive-intro h1{font-size:clamp(108px,11.4vw,174px);line-height:1.14;letter-spacing:.08em;margin:0 0 75px}
+html[lang="zh-CN"] .archive-intro h1 em{color:#a8bbb5}
+html[lang="zh-CN"] .collection-header h2{font-size:clamp(59px,5.7vw,86px);line-height:1.18;letter-spacing:.055em}
+html[lang="zh-CN"] .archive-intro a,html[lang="zh-CN"] .filter-row button,html[lang="zh-CN"] .archive-intro figcaption,html[lang="zh-CN"] .archive-footer{font-family:var(--zh-text);font-size:12px;letter-spacing:.09em}
+html[lang="zh-CN"] .archive-item-caption strong{font:300 17px/1.4 var(--zh-text);letter-spacing:.03em}
+html[lang="zh-CN"] .archive-item-caption small{font-family:var(--zh-text)}
+html[lang="zh-CN"] .archive-detail h3{font:400 clamp(37px,3.3vw,55px)/1.22 var(--zh-display);letter-spacing:.035em}
+html[lang="zh-CN"] .archive-detail-description{font:400 15px/1.9 var(--zh-text);letter-spacing:.015em}
+html[lang="zh-CN"] .archive-detail-category,html[lang="zh-CN"] .archive-detail-facts dt,html[lang="zh-CN"] .archive-detail-facts dd{font-family:var(--zh-text)}
+@media(max-width:700px){
+ html[lang="zh-CN"] .archive-intro h1{font-size:clamp(64px,15vw,90px);line-height:1.16;margin:0 0 42px}
+ html[lang="zh-CN"] .collection-header h2{font-size:clamp(47px,10vw,66px)}
+ html[lang="zh-CN"] .archive-item-caption strong{font-size:12px;line-height:1.35}
+ html[lang="zh-CN"] .filter-row button{font-size:11px}
+ html[lang="zh-CN"] .archive-detail h3{font-size:34px}
+ html[lang="zh-CN"] .archive-detail-description{font-size:14px;line-height:1.8}
+}

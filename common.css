@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0}
+button,a{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+button:focus-visible,a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.skip-link{position:absolute;left:12px;top:-80px;background:#fff;color:#111;padding:10px 14px;z-index:100}
+.skip-link:focus{top:12px}
+.lang-switch{display:inline-flex;align-items:center;gap:5px;padding-left:12px;border-left:1px solid currentColor;white-space:nowrap;vertical-align:middle}
+.lang-switch button{border:0;background:none;color:inherit;opacity:.5;font:10px/1.2 Arial,"Microsoft YaHei",sans-serif;letter-spacing:.03em;padding:4px 3px}
+.lang-switch button.active{opacity:1;border-bottom:1px solid currentColor}
+html[lang="zh-CN"] h1,html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-weight:300;letter-spacing:-.045em}
